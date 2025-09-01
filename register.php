@@ -38,6 +38,7 @@ if (isset($_POST['register'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Backend</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="public/favicon.ico">
   </head>
   <body class="bg-gradient-to-l from-[#8DBCC7] to-[#A4CCD9]">
     <?php include_once "layouts/header.html" ?>
