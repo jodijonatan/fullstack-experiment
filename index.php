@@ -14,7 +14,7 @@
       <div class="max-w-2xl">
         <h3 class="text-2xl font-bold text-black">Selamat datang pada website Backend Fundamental</h3>
         <h6 class="text-xl font-semibold text-slate-600">Jodi Jonatan | 2025</h6>
-        <p class="text-slate-950">Website ini hanya dibuat untuk belajar backend development saja, dibuat dengan PHP, TailwindCSS, html dan MySQL. Website ini dibuat untuk belajar berinteraksi antara frontend dengan backend dan database</p>
+        <p class="text-slate-950">Website ini hanya dibuat untuk belajar backend development saja, dibuat dengan PHP, TailwindCSS, html dan MySQL. Website ini dibuat untuk belajar berinteraksi antara frontend dengan backend dan database.</p>
       </div>
       <img src="./assets/home.jpg" alt="image" class="size-80 rounded-4xl">
     </main>
