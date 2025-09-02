@@ -1,6 +1,6 @@
 # Fullstack Experiment 🚀
 
-**Slogan atau Deskripsi Singkat:**
+**Deskripsi Singkat:**
 Project ini dibuat untuk experiment dan belajar konsep fullstack dengan tech utamanya PHP dan Tailwind.
 
 ## Daftar Isi
