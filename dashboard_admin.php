@@ -23,9 +23,9 @@ if(isset($_POST['logout'])) {
 
     <main class="min-h-screen flex justify-between items-center px-40">
         <div>
-            <h1 class="text-2xl font-bold text-black">Selamat datang di dashboard, <span class="text-sky-800"><?= $_SESSION['username'] ?></span></h1>
+            <h1 class="text-2xl font-bold text-black">Selamat datang di dashboard admin, <span class="text-sky-800"><?= $_SESSION['username'] ?></span></h1>
         </div>
-        <img src="assets/dashboard.jpg" alt="image" class="size-80 rounded-4xl">
+        <img src="assets/dashboard_admin.jpg" alt="image" class="size-80 rounded-4xl">
     </main>
 
     <?php include_once 'layouts/footer.html' ?>

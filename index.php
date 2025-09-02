@@ -14,7 +14,7 @@ if(isset($_SESSION['is_login'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Backend</title>
+    <title>Fullstack Experiment</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="public/favicon.ico">
   </head>

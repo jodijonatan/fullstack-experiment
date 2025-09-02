@@ -7,8 +7,13 @@ include "service/connection.php";
 $message = "";
 
 if(isset($_SESSION['is_login'])) {
-  header('location: dashboard.php');
-  exit;
+    if($_SESSION['role'] == 'admin') {
+        header('location: dashboard_admin.php');
+        exit;
+    } elseif($_SESSION['role'] == 'user') {
+        header('location: dashboard.php');
+        exit;
+    }
 }
 
 if(isset($_POST['login'])) {
@@ -24,7 +29,13 @@ if(isset($_POST['login'])) {
 
             $_SESSION['username'] = $data['username'];
             $_SESSION['is_login'] = true;
-            header("location: dashboard.php");
+            $_SESSION['role'] = $data['role'];
+
+            if($data['role'] == 'admin') {
+              header('location: dashboard_admin.php');
+            } elseif($data['role'] == 'user') {
+              header('location: dashboard.php');
+            }          
             exit;
         } else {
             $pesan = "akun tidak ditemukan";
@@ -41,7 +52,7 @@ if(isset($_POST['login'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Backend</title>
+    <title>Fullstack Experiment</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="public/favicon.ico">
   </head>
