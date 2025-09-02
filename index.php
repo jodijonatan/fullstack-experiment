@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['is_login'])) {
+  header('location: dashboard.php');
+  exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
