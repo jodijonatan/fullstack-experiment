@@ -7,8 +7,13 @@ include_once "service/connection.php";
 $pesan = "";
 
 if(isset($_SESSION['is_login'])) {
-  header('location: dashboard.php');
-  exit;
+  if($_SESSION['role'] == 'admin') {
+    header('location: dashboard_admin.php');
+    exit;
+  } elseif($_SESSION['role'] == 'user') {
+    header('location: dashboard.php');
+    exit;
+  }
 }
 
 if (isset($_POST['register'])){

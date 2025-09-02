@@ -24,6 +24,7 @@ if(isset($_POST['logout'])) {
     <main class="min-h-screen flex justify-between items-center px-40">
         <div>
             <h1 class="text-2xl font-bold text-black">Selamat datang di dashboard, <span class="text-sky-800"><?= $_SESSION['username'] ?></span></h1>
+            <h4 class="text-xl font-md">Kamu bukan admin, jangan banyak gaya 😠</h4>
         </div>
         <img src="assets/dashboard.jpg" alt="image" class="size-80 rounded-4xl">
     </main>

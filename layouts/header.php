@@ -8,7 +8,7 @@
     <?php } ?>
     <?php if(isset($_SESSION['is_login']) && $_SESSION['is_login'] == true) { ?>
       <form class="ml-8 hover:underline hover:text-sky-800" action="dashboard.php" method="POST">
-        <input type="submit" name="logout" value="Logout" class="cursor-pointer">
+        <input type="submit" name="logout" value="Logout" class="cursor-pointer hover:underline">
       </form>
     <?php } ?>
   </ul>

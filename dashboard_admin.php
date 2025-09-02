@@ -3,8 +3,8 @@
 session_start();
 if(isset($_POST['logout'])) {
     session_destroy();
-
     header('location: index.php');
+    exit;
 }
 
 ?>
@@ -24,6 +24,7 @@ if(isset($_POST['logout'])) {
     <main class="min-h-screen flex justify-between items-center px-40">
         <div>
             <h1 class="text-2xl font-bold text-black">Selamat datang di dashboard admin, <span class="text-sky-800"><?= $_SESSION['username'] ?></span></h1>
+            <h4 class="text-xl font-md">Kamu admin, bisa berbuat sesuka hati 😀👍</h4>
         </div>
         <img src="assets/dashboard_admin.jpg" alt="image" class="size-80 rounded-4xl">
     </main>
