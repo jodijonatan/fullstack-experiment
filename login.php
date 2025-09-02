@@ -46,7 +46,7 @@ if(isset($_POST['login'])) {
     <link rel="icon" href="public/favicon.ico">
   </head>
   <body class="bg-gradient-to-l from-[#8DBCC7] to-[#A4CCD9]">
-    <?php include_once "layouts/header.html" ?>
+    <?php include_once "layouts/header.php" ?>
 
     <main class="min-h-screen flex items-center justify-center">
       <h1><?php if(isset($pesan)) echo $pesan ?></h1>

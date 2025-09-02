@@ -41,7 +41,7 @@ if (isset($_POST['register'])){
     <link rel="icon" href="public/favicon.ico">
   </head>
   <body class="bg-gradient-to-l from-[#8DBCC7] to-[#A4CCD9]">
-    <?php include_once "layouts/header.html" ?>
+    <?php include_once "layouts/header.php" ?>
 
     <main class="min-h-screen flex justify-center items-center">
       <form action="register.php" method="POST" class="bg-slate-200 px-16 py-10 rounded-4xl">

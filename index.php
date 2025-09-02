@@ -8,7 +8,7 @@
     <link rel="icon" href="public/favicon.ico">
   </head>
   <body class="bg-gradient-to-l from-[#8DBCC7] to-[#A4CCD9]">
-    <?php include_once "layouts/header.html" ?>
+    <?php include_once "layouts/header.php" ?>
 
     <main class="min-h-screen flex justify-between items-center px-40">
       <div class="max-w-2xl">

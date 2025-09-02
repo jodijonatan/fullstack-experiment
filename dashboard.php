@@ -15,15 +15,17 @@ if(isset($_POST['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Backend</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="public/favicon.ico">
 </head>
-<body>
-    <?php include_once 'layouts/header.html' ?>
+<body class="bg-gradient-to-l from-[#8DBCC7] to-[#A4CCD9]">
+    <?php include_once 'layouts/header.php' ?>
 
-    <main>
-        <h1>Selamat datang di dashboard, <?= $_SESSION['username'] ?></h1>
-        <form action="dashboard.php" method="POST">
-            <input type="submit" name="logout" value="Logout">
-        </form>
+    <main class="min-h-screen flex justify-between items-center px-40">
+        <div>
+            <h1 class="text-2xl font-bold text-black">Selamat datang di dashboard, <span class="text-sky-800"><?= $_SESSION['username'] ?></span></h1>
+        </div>
+        <img src="assets/dashboard.jpg" alt="image" class="size-80 rounded-4xl">
     </main>
 
     <?php include_once 'layouts/footer.html' ?>
